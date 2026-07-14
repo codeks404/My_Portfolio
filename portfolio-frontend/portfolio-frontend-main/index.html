@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Kumkum Shakya — Full Stack Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a class="nav-logo" href="#">KS<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="theme-btn" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<main>
+<section id="home" style="padding: 0;">
+  <div class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-eyebrow reveal">Available for Opportunities</div>
+        <h1 class="hero-name reveal reveal-delay-1" id="heroName">Loading<span>...</span></h1>
+        <p class="hero-title reveal reveal-delay-2" id="heroTitle"></p>
+        <p class="hero-bio reveal reveal-delay-3" id="heroBio"></p>
+        <div class="hero-ctas reveal reveal-delay-4">
+          <a href="#projects" class="btn-primary">View Projects ↗</a>
+          <a href="#contact" class="btn-outline">Get In Touch</a>
+        </div>
+      </div>
+      <div class="hero-photo-wrap reveal reveal-delay-2">
+        <img class="hero-photo" id="heroPhoto" src="" alt="Profile photo" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-inner">
+    <p class="section-label reveal">About Me</p>
+    <h2 class="section-title reveal reveal-delay-1">Who I Am</h2>
+    <div class="about-grid">
+      <div>
+        <p style="color: var(--muted); line-height: 1.8; margin-bottom: 1.5rem;" class="reveal reveal-delay-1" id="aboutP1"></p>
+        <p style="color: var(--muted); line-height: 1.8;" class="reveal reveal-delay-2" id="aboutP2"></p>
+      </div>
+      <div class="about-cards-col">
+        <div class="about-card reveal reveal-delay-1">
+          <div class="info-row">
+            <div class="info-icon">📍</div>
+            <div class="info-text">
+              <strong>Location</strong>
+              <span id="infoLocation">—</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-card reveal reveal-delay-2">
+          <div class="info-row">
+            <div class="info-icon">🎓</div>
+            <div class="info-text">
+              <strong>Education</strong>
+              <span id="infoEducation">—</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-card reveal reveal-delay-3">
+          <div class="info-row">
+            <div class="info-icon">💡</div>
+            <div class="info-text">
+              <strong>Focus</strong>
+              <span id="infoFocus">—</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-card reveal reveal-delay-4">
+          <div class="info-row">
+            <div class="info-icon">🚀</div>
+            <div class="info-text">
+              <strong>Goal</strong>
+              <span id="infoGoal">—</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SKILLS (rendered dynamically from GET /api/skills) -->
+<section id="skills">
+  <div class="section-inner">
+    <p class="section-label reveal">Technical Stack</p>
+    <h2 class="section-title reveal reveal-delay-1">Skills & Technologies</h2>
+    <p class="section-sub reveal reveal-delay-2">Technologies I work with to build modern, performant applications.</p>
+    <div class="skills-grid" id="skillsGrid">
+      <span class="skeleton skeleton-tag"></span>
+      <span class="skeleton skeleton-tag"></span>
+      <span class="skeleton skeleton-tag"></span>
+      <span class="skeleton skeleton-tag"></span>
+      <span class="skeleton skeleton-tag"></span>
+      <span class="skeleton skeleton-tag"></span>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- PROJECTS (rendered dynamically from GET /api/projects) -->
+<section id="projects">
+  <div class="section-inner">
+    <p class="section-label reveal">Portfolio</p>
+    <h2 class="section-title reveal reveal-delay-1">Featured Projects</h2>
+    <p class="section-sub reveal reveal-delay-2">A selection of projects I've built — explore more on my <a href="https://github.com/codeks404" target="_blank" style="color: var(--accent);">GitHub</a>.</p>
+    <div class="projects-grid" id="projectsGrid">
+      <div class="project-card skeleton skeleton-card"></div>
+      <div class="project-card skeleton skeleton-card"></div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- EDUCATION -->
+<section id="education">
+  <div class="section-inner">
+    <p class="section-label reveal">Academic Background</p>
+    <h2 class="section-title reveal reveal-delay-1">Education</h2>
+    <div class="edu-card reveal reveal-delay-2">
+      <div class="edu-icon">🎓</div>
+      <div class="edu-info">
+        <h3>Bachelor of Technology — Computer Science</h3>
+        <p id="eduDetail">Currently in 3rd Year · 2024 – 2028</p>
+        <span class="edu-badge">📚 Active Student · 3rd Year</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-inner">
+    <p class="section-label reveal">Let's Connect</p>
+    <h2 class="section-title reveal reveal-delay-1">Get In Touch</h2>
+    <p class="section-sub reveal reveal-delay-2">Whether it's an opportunity, a project idea, or just a hello — I'd love to hear from you.</p>
+
+    <div class="contact-grid">
+      <div style="display:flex; flex-direction:column; gap:1.25rem;">
+        <a href="mailto:kumkumshakya1027@gmail.com" class="contact-card reveal" id="contactEmail">
+          <div class="contact-icon">✉️</div>
+          <div class="contact-info">
+            <strong>Email</strong>
+            <span id="contactEmailText">kumkumshakya1027@gmail.com</span>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/kumkum-shakya-183335352" target="_blank" class="contact-card reveal reveal-delay-1" id="contactLinkedin">
+          <div class="contact-icon">💼</div>
+          <div class="contact-info">
+            <strong>LinkedIn</strong>
+            <span>kumkum-shakya-183335352</span>
+          </div>
+        </a>
+        <a href="https://github.com/codeks404" target="_blank" class="contact-card reveal reveal-delay-2" id="contactGithub">
+          <div class="contact-icon">🐙</div>
+          <div class="contact-info">
+            <strong>GitHub</strong>
+            <span>github.com/codeks404</span>
+          </div>
+        </a>
+        <div class="contact-card reveal reveal-delay-3">
+          <div class="contact-icon">📍</div>
+          <div class="contact-info">
+            <strong>Location</strong>
+            <span id="contactLocation">Meerut, Uttar Pradesh, India</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- REAL CONTACT FORM: backend validation + DB storage + email -->
+      <form class="contact-form reveal reveal-delay-1" id="contactForm" novalidate>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+          <span class="form-error" id="nameError"></span>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          <span class="form-error" id="emailError"></span>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="Say hello, or tell me about an opportunity..." required></textarea>
+          <span class="form-error" id="messageError"></span>
+        </div>
+        <button type="submit" class="btn-primary" id="submitBtn">Send Message</button>
+        <div class="form-status" id="formStatus"></div>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <p>Designed & built by <span>Kumkum Shakya</span> · 2025</p>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
