@@ -15,21 +15,7 @@ https://portfolio-frontend-d7hj.vercel.app
 
 ## Features
 
-• Fully responsive and mobile-first UI
 
-• Backend-driven dynamic content (projects, skills, profile data)
-
-• RESTful APIs for portfolio data
-
-• Contact form with backend validation and database storage
-
-• Email integration using server-side service
-
-• Secure environment variable configuration
-
-• Proper MVC or layered architecture
-
-• Production-ready deployment setup
 ## Setup
 
 ### Backend
