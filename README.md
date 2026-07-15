@@ -1,6 +1,6 @@
 # My Portfolio Website
 
-Personal Portfolio Website (Full-Stack Engineering Project)
+A full-stack personal portfolio website with a dynamic, database-driven backend — built to move beyond a static site into a real client-server application with working APIs and a functional contact form.
 
 **Stack:** 
 
@@ -12,6 +12,10 @@ Database: MongoDB
 
 ## Live Site
 https://portfolio-frontend-d7hj.vercel.app
+
+## Backend deployed separately on Render:
+
+https://portfolio-backend-2udn.onrender.com
 
 ## Features
 
